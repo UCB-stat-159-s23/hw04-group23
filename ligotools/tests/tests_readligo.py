@@ -4,6 +4,7 @@ from ligotools import read_hdf5
 from ligotools import readligo as rl
 import h5py
 import os
+import json
 
 def test_read_hdf5():
     filename = "../../data/H-H1_LOSC_4_V2-1126259446-32.hdf5"
@@ -40,8 +41,27 @@ def test_FileList_findfile():
 	os.remove('./a-L1-4096-32.hdf5')
 	
 	
-	
-   
+def test_loaddata():
+    
+    eventname = 'GW150914'
+    fnjson = "../../data/BBH_events_v3.json"
+    events = json.load(open(fnjson,"r"))
+    
+    event = events[eventname]
+    fn_H1 = event['fn_H1']
+    fn_L1 = event['fn_L1']
+    
+    strain_H1, time_H1, chan_dict_H1 = rl.loaddata('../../data/'+fn_H1, 'H1')
+    strain_L1, time_L1, chan_dict_L1 = rl.loaddata('../../data/'+fn_L1, 'L1')
+    
+    assert type(strain_H1) == np.ndarray, "Check the type of H1 strain, suppose to be an array"
+    assert type(strain_L1) == np.ndarray, "Check the type of L1 strain, suppose to be an array"
+    assert type(time_H1) == np.ndarray, "Check the type of H1 time, suppose to be an array"
+    assert type(time_L1) == np.ndarray, "Check the type of L1 time, suppose to be an array"
+    assert len(strain_H1) == len(time_H1), "Inconsistence length of strain and time of H1"
+    assert len(strain_L1) == len(time_L1), "Inconsistence length of strain and time of L1"
+    assert type(chan_dict_H1) == dict, "Check the type of chan_dict_H1"
+    assert type(chan_dict_L1) == dict, "Check the type of chan_dict_L1"
 
 
 

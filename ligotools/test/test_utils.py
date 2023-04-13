@@ -64,4 +64,4 @@ def test_plot_results(mock_show):
 	u.plot_results(timemax, SNR, pcolor, det, tevent, strain_whitenbp, template_match, 
 				datafreq, template_fft, data_psd, d_eff, time, eventname, plottype, freqs, fs)
 	
-	[os.remove(file) for file in os.listdir('.') if file.endswith('.png')]
+	#[os.remove(file) for file in os.listdir('.') if file.endswith('.png')]

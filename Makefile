@@ -19,6 +19,6 @@ html :
 #clean - clean up the figures, audio and _build folders.
 .PHONY : clean
 clean :
-	rm -rf ./data/*
-	rm -rf ./figures/*
-	rm -rf ./_build/*
+	rm -rf audio/*
+	rm -rf figures/*
+	rm -rf _build/*

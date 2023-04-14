@@ -667,7 +667,7 @@ For L1, 32 out of 32 seconds contain usable DATA
     <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;strain&#39;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;lower right&#39;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Advanced LIGO strain data near &#39;</span><span class="o">+</span><span class="n">eventname</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_strain.&#39;</span><span class="o">+</span><span class="n">plottype</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;figures/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_strain.&#39;</span><span class="o">+</span><span class="n">plottype</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -722,7 +722,7 @@ For the moment, let’s ignore that, and assume it’s all noise.</p>
     <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Freq (Hz)&#39;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper center&#39;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Advanced LIGO strain data near &#39;</span><span class="o">+</span><span class="n">eventname</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_ASDs.&#39;</span><span class="o">+</span><span class="n">plottype</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;figures/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_ASDs.&#39;</span><span class="o">+</span><span class="n">plottype</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -890,7 +890,7 @@ Whitening requires no prior knowledge of spectral lines, etc; only the data are 
     <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="n">deltat</span><span class="p">,</span> <span class="n">deltat</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2000</span><span class="p">])</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;aLIGO H1 strain data near &#39;</span><span class="o">+</span><span class="n">eventname</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_H1_spectrogram.&#39;</span><span class="o">+</span><span class="n">plottype</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;figures/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_H1_spectrogram.&#39;</span><span class="o">+</span><span class="n">plottype</span><span class="p">)</span>
 
     <span class="c1"># Plot the L1 spectrogram:</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
@@ -901,7 +901,7 @@ Whitening requires no prior knowledge of spectral lines, etc; only the data are 
     <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="n">deltat</span><span class="p">,</span> <span class="n">deltat</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2000</span><span class="p">])</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;aLIGO L1 strain data near &#39;</span><span class="o">+</span><span class="n">eventname</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_L1_spectrogram.&#39;</span><span class="o">+</span><span class="n">plottype</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;figures/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_L1_spectrogram.&#39;</span><span class="o">+</span><span class="n">plottype</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -934,7 +934,7 @@ Whitening requires no prior knowledge of spectral lines, etc; only the data are 
     <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">500</span><span class="p">])</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;aLIGO H1 strain data near &#39;</span><span class="o">+</span><span class="n">eventname</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_H1_spectrogram_whitened.&#39;</span><span class="o">+</span><span class="n">plottype</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;figures/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_H1_spectrogram_whitened.&#39;</span><span class="o">+</span><span class="n">plottype</span><span class="p">)</span>
 
     <span class="c1"># Plot the L1 whitened spectrogram around the signal</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
@@ -945,7 +945,7 @@ Whitening requires no prior knowledge of spectral lines, etc; only the data are 
     <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">500</span><span class="p">])</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;aLIGO L1 strain data near &#39;</span><span class="o">+</span><span class="n">eventname</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_L1_spectrogram_whitened.&#39;</span><span class="o">+</span><span class="n">plottype</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;figures/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_L1_spectrogram_whitened.&#39;</span><span class="o">+</span><span class="n">plottype</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1078,7 +1078,7 @@ Whitening requires no prior knowledge of spectral lines, etc; only the data are 
     <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;time (s)&#39;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;v/c&#39;</span><span class="p">)</span>
     <span class="c1">#plt.title(eventname+&#39; template v/c&#39;)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_template.&#39;</span><span class="o">+</span><span class="n">plottype</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;figures/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_template.&#39;</span><span class="o">+</span><span class="n">plottype</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1096,7 +1096,7 @@ v/c at peak = 0.57
 Radius of final BH = 199 km
 </pre></div>
 </div>
-<img alt="_images/a00bc8bbafdca6a0b449645aae65634dc89ce54274bf22798182653f23153294.png" src="_images/a00bc8bbafdca6a0b449645aae65634dc89ce54274bf22798182653f23153294.png" />
+<img alt="_images/47e40d4b1328a862973c10978764e327348819963fb96b6058a5bc6d75908ec4.png" src="_images/47e40d4b1328a862973c10978764e327348819963fb96b6058a5bc6d75908ec4.png" />
 </div>
 </div>
 </section>
@@ -1253,15 +1253,15 @@ For detector L1, maximum at 1126259462.4324 with SNR = 13.2, D_eff = 999.74, hor
 <span class="n">indxd</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">((</span><span class="n">time</span> <span class="o">&gt;=</span> <span class="n">tevent</span><span class="o">-</span><span class="n">deltat_sound</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">time</span> <span class="o">&lt;</span> <span class="n">tevent</span><span class="o">+</span><span class="n">deltat_sound</span><span class="p">))</span>
 
 <span class="c1"># write the files:</span>
-<span class="n">write_wavfile</span><span class="p">(</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_H1_whitenbp.wav&quot;</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">fs</span><span class="p">),</span> <span class="n">strain_H1_whitenbp</span><span class="p">[</span><span class="n">indxd</span><span class="p">])</span>
-<span class="n">write_wavfile</span><span class="p">(</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_L1_whitenbp.wav&quot;</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">fs</span><span class="p">),</span> <span class="n">strain_L1_whitenbp</span><span class="p">[</span><span class="n">indxd</span><span class="p">])</span>
+<span class="n">write_wavfile</span><span class="p">(</span><span class="s1">&#39;audio/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_H1_whitenbp.wav&quot;</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">fs</span><span class="p">),</span> <span class="n">strain_H1_whitenbp</span><span class="p">[</span><span class="n">indxd</span><span class="p">])</span>
+<span class="n">write_wavfile</span><span class="p">(</span><span class="s1">&#39;audio/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_L1_whitenbp.wav&quot;</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">fs</span><span class="p">),</span> <span class="n">strain_L1_whitenbp</span><span class="p">[</span><span class="n">indxd</span><span class="p">])</span>
 
 <span class="c1"># re-whiten the template using the smoothed PSD; it sounds better!</span>
 <span class="n">template_p_smooth</span> <span class="o">=</span> <span class="n">whiten</span><span class="p">(</span><span class="n">template_p</span><span class="p">,</span><span class="n">psd_smooth</span><span class="p">,</span><span class="n">dt</span><span class="p">)</span>
 
 <span class="c1"># and the template, sooming in on [-3,+1] seconds around the merger:</span>
 <span class="n">indxt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">((</span><span class="n">time</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="n">time</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">template_offset</span><span class="o">-</span><span class="n">deltat_sound</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">time</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">time</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">template_offset</span><span class="o">+</span><span class="n">deltat_sound</span><span class="p">)))</span>
-<span class="n">write_wavfile</span><span class="p">(</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_template_whiten.wav&quot;</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">fs</span><span class="p">),</span> <span class="n">template_p_smooth</span><span class="p">[</span><span class="n">indxt</span><span class="p">])</span>
+<span class="n">write_wavfile</span><span class="p">(</span><span class="s1">&#39;audio/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_template_whiten.wav&quot;</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">fs</span><span class="p">),</span> <span class="n">template_p_smooth</span><span class="p">[</span><span class="n">indxt</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -1273,14 +1273,14 @@ For detector L1, maximum at 1126259462.4324 with SNR = 13.2, D_eff = 999.74, hor
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Audio</span>
 
-<span class="n">fna</span> <span class="o">=</span> <span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_template_whiten.wav&quot;</span>
+<span class="n">fna</span> <span class="o">=</span> <span class="s1">&#39;audio/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_template_whiten.wav&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fna</span><span class="p">)</span>
 <span class="n">Audio</span><span class="p">(</span><span class="n">fna</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GW150914_template_whiten.wav
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>audio/GW150914_template_whiten.wav
 </pre></div>
 </div>
 <div class="output text_html">
@@ -1292,14 +1292,14 @@ For detector L1, maximum at 1126259462.4324 with SNR = 13.2, D_eff = 999.74, hor
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fna</span> <span class="o">=</span> <span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_H1_whitenbp.wav&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fna</span> <span class="o">=</span> <span class="s1">&#39;audio/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_H1_whitenbp.wav&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fna</span><span class="p">)</span>
 <span class="n">Audio</span><span class="p">(</span><span class="n">fna</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GW150914_H1_whitenbp.wav
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>audio/GW150914_H1_whitenbp.wav
 </pre></div>
 </div>
 <div class="output text_html">
@@ -1328,12 +1328,12 @@ this is the “audio” equivalent of the enhanced visuals that NASA employs on 
 <span class="n">strain_L1_shifted</span> <span class="o">=</span> <span class="n">reqshift</span><span class="p">(</span><span class="n">strain_L1_whitenbp</span><span class="p">,</span><span class="n">fshift</span><span class="o">=</span><span class="n">fshift</span><span class="p">,</span><span class="n">sample_rate</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
 
 <span class="c1"># write the files:</span>
-<span class="n">write_wavfile</span><span class="p">(</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_H1_shifted.wav&quot;</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">fs</span><span class="p">),</span> <span class="n">strain_H1_shifted</span><span class="p">[</span><span class="n">indxd</span><span class="p">])</span>
-<span class="n">write_wavfile</span><span class="p">(</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_L1_shifted.wav&quot;</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">fs</span><span class="p">),</span> <span class="n">strain_L1_shifted</span><span class="p">[</span><span class="n">indxd</span><span class="p">])</span>
+<span class="n">write_wavfile</span><span class="p">(</span><span class="s1">&#39;audio/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_H1_shifted.wav&quot;</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">fs</span><span class="p">),</span> <span class="n">strain_H1_shifted</span><span class="p">[</span><span class="n">indxd</span><span class="p">])</span>
+<span class="n">write_wavfile</span><span class="p">(</span><span class="s1">&#39;audio/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_L1_shifted.wav&quot;</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">fs</span><span class="p">),</span> <span class="n">strain_L1_shifted</span><span class="p">[</span><span class="n">indxd</span><span class="p">])</span>
 
 <span class="c1"># and the template:</span>
 <span class="n">template_p_shifted</span> <span class="o">=</span> <span class="n">reqshift</span><span class="p">(</span><span class="n">template_p_smooth</span><span class="p">,</span><span class="n">fshift</span><span class="o">=</span><span class="n">fshift</span><span class="p">,</span><span class="n">sample_rate</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
-<span class="n">write_wavfile</span><span class="p">(</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_template_shifted.wav&quot;</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">fs</span><span class="p">),</span> <span class="n">template_p_shifted</span><span class="p">[</span><span class="n">indxt</span><span class="p">])</span>
+<span class="n">write_wavfile</span><span class="p">(</span><span class="s1">&#39;audio/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_template_shifted.wav&quot;</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">fs</span><span class="p">),</span> <span class="n">template_p_shifted</span><span class="p">[</span><span class="n">indxt</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -1343,14 +1343,14 @@ this is the “audio” equivalent of the enhanced visuals that NASA employs on 
 <h3>Listen to the frequency-shifted template and data<a class="headerlink" href="#listen-to-the-frequency-shifted-template-and-data" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fna</span> <span class="o">=</span> <span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_template_shifted.wav&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fna</span> <span class="o">=</span> <span class="s1">&#39;audio/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_template_shifted.wav&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fna</span><span class="p">)</span>
 <span class="n">Audio</span><span class="p">(</span><span class="n">fna</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GW150914_template_shifted.wav
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>audio/GW150914_template_shifted.wav
 </pre></div>
 </div>
 <div class="output text_html">
@@ -1362,14 +1362,14 @@ this is the “audio” equivalent of the enhanced visuals that NASA employs on 
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fna</span> <span class="o">=</span> <span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_H1_shifted.wav&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fna</span> <span class="o">=</span> <span class="s1">&#39;audio/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s2">&quot;_H1_shifted.wav&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fna</span><span class="p">)</span>
 <span class="n">Audio</span><span class="p">(</span><span class="n">fna</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GW150914_H1_shifted.wav
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>audio/GW150914_H1_shifted.wav
 </pre></div>
 </div>
 <div class="output text_html">
@@ -1490,7 +1490,7 @@ GPS start, GPS stop and length of segment 0 in this file =  1126259446.0 1126259
       <span class="n">template_H1</span><span class="p">[</span><span class="n">irange</span><span class="p">],</span><span class="n">template_L1</span><span class="p">[</span><span class="n">irange</span><span class="p">]</span> <span class="p">]</span>
 <span class="n">datcsv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">dat</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
 <span class="c1"># make a csv filename, header, and format</span>
-<span class="n">fncsv</span> <span class="o">=</span> <span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_data.csv&#39;</span>
+<span class="n">fncsv</span> <span class="o">=</span> <span class="s1">&#39;data/&#39;</span><span class="o">+</span><span class="n">eventname</span><span class="o">+</span><span class="s1">&#39;_data.csv&#39;</span>
 <span class="n">headcsv</span> <span class="o">=</span> <span class="n">eventname</span><span class="o">+</span><span class="s1">&#39; time-&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">tevent</span><span class="p">)</span><span class="o">+</span> \
     <span class="s1">&#39; (s),H1_data_whitened,L1_data_whitened,H1_template_whitened,L1_template_whitened&#39;</span>
 <span class="n">fmtcsv</span> <span class="o">=</span> <span class="s2">&quot;,&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">%10.6f</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">5</span><span class="p">)</span>
@@ -1502,7 +1502,7 @@ GPS start, GPS stop and length of segment 0 in this file =  1126259446.0 1126259
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Wrote whitened data to file GW150914_data.csv
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Wrote whitened data to file data/GW150914_data.csv
 You can download this file by clicking &#39;jupyter&#39; in the top left corner, or using the &#39;data&#39; menu in Azure.
 </pre></div>
 </div>

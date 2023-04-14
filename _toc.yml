@@ -4,4 +4,4 @@
 format: jb-book
 root: intro
 chapters:
-- file: LOSC_Event_tutorial
+- file: LOSC_Event_tutorial.ipynb

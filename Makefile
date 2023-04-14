@@ -14,6 +14,6 @@ html :
 
 
 clean :
-	rm -r ./data/*
-	rm -r ./figures/*
-	rm -r ./_build/*
+	rm -rf ./data/*
+	rm -rf ./figures/*
+	rm -rf ./_build/*
